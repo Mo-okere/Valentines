@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #ffcccc; /* Adjust background color as needed */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .text {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 2em; /* Adjust font size as needed */
+            color: #ff0066; /* Adjust text color as needed */
+            margin-bottom: 20px;
+        }
+
+        .button-container {
+            margin-top: 20px;
+        }
+
+        .reveal-button {
+            background-color: #b784a7; /* Mauve color */
+            color: white;
+            padding: 10px 20px;
+            font-size: 1.5em;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .teddy-bear {
+            display: none;
+            margin-top: 20px;
+            max-width: 80%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="text">Happy Valentine's Day, Baby</div>
+    <div class="button-container">
+        <button class="reveal-button" onclick="revealTeddyBear()">Click me fine girl</button>
+    </div>
+    <img class="teddy-bear" src="https://m.media-amazon.com/images/I/717rdXMKrEL._AC_UF894,1000_QL80_.jpg" alt="Teddy Bear Image">
+
+    <script>
+        function revealTeddyBear() {
+            const teddyBear = document.querySelector('.teddy-bear');
+            teddyBear.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
